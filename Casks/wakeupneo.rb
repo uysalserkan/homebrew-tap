@@ -11,6 +11,12 @@ cask "wakeupneo" do
 
   app "WakeUpNeo.app"
 
+  postflight do
+    system_command "xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/WakeUpNeo.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.wakeupneo.app",
     "~/Library/Caches/com.wakeupneo.app",
