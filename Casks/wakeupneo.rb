@@ -1,6 +1,6 @@
 cask "wakeupneo" do
-  version "1.0.15"
-  sha256 "58f9ba76927ca69847aeddfa6cba14e229c446491cfa7f2d7d6a42d9a364d029"
+  version "1.0.16"
+  sha256 "07da554aea7e2aa265c353b2cdaf1b849a9d9125d0fb0eed16e6d945cdf9ccab"
 
   url "https://github.com/uysalserkan/WakeUpNeo/releases/download/v#{version}/WakeUpNeo-#{version}-macOS.zip"
   name "WakeUpNeo"
